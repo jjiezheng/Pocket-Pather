@@ -149,7 +149,8 @@ void WmoModel::getIndices( Indices32_t *indices, uint32_t filter, uint32_t off )
     // filter vertices by triangle material info
     size_t num_triangles = grp_indices.size() / 3;
     for ( int i = 0; i < num_triangles; i++ ) {
-      if ( !((*iter)->getMopyChunk().infos[i].flags & filter) ) {
+	  //if ( !((*iter)->getMopyChunk().infos[i].flags & filter) ) {
+	  if ( ((*iter)->getMopyChunk().infos[i].flags & 0x04 && (*iter)->getMopyChunk().infos[i].id != 0xFF) ) {
         increment[i*3+0] = -1;
         increment[i*3+1] = -1;
         increment[i*3+2] = -1;

@@ -41,14 +41,14 @@ int main( int arch, char **argv ) {
 	
 	// load WDT file which tells us what ADT tiles to load
 	BufferS_t file_buffer;
-	std::string zone_path( "world\\maps\\PvpZone01\\PvpZone01" );
+	std::string zone_path( "world\\maps\\Kalimdor\\Kalimdor" );
 	mpq_h.getFile( zone_path + ".wdt", &file_buffer );
 	
 	// Others Option
-	uint32_t areaId = -1;
+	uint32_t areaId = 14;
 	uint32_t xTile = -1;
 	uint32_t yTile = -1;
-	bool dumpAll = true;
+	bool dumpAll = false;
 	bool saveTile = true; // Save to .obj file
 	
 	// create geometry buffer
@@ -112,7 +112,7 @@ int main( int arch, char **argv ) {
 			// Save to .obj
 			std::stringstream fileName;
 			fileName.clear();
-			fileName << "dump/" << iter->x << "_" << iter->y << ".obj";
+			fileName << "dump/" << iter->y << "_" << iter->x << ".obj";
 			std::cout << "Save to \"" << fileName.str() << "\" file." << std::endl;
 			
 			std::fstream fs1((const char*)(fileName.str().c_str()), std::fstream::out|std::fstream::binary);
