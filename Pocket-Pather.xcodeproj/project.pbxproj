@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E890D3812C51A3200AEBAAC /* meshandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E890D3712C51A3200AEBAAC /* meshandler.cpp */; };
 		6EC7417F12C4DB8000E46C7F /* adt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7416F12C4DB8000E46C7F /* adt.cpp */; };
 		6EC7418012C4DB8000E46C7F /* m2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7417212C4DB8000E46C7F /* m2.cpp */; };
 		6EC7418112C4DB8000E46C7F /* mpqhandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7417412C4DB8000E46C7F /* mpqhandler.cpp */; };
@@ -20,10 +21,25 @@
 		6EC742F712C4DF7C00E46C7F /* explode.c in Sources */ = {isa = PBXBuildFile; fileRef = 6EC742E812C4DF7C00E46C7F /* explode.c */; };
 		6EC742F812C4DF7C00E46C7F /* extract.c in Sources */ = {isa = PBXBuildFile; fileRef = 6EC742EA12C4DF7C00E46C7F /* extract.c */; };
 		6EC742F912C4DF7C00E46C7F /* huffman.c in Sources */ = {isa = PBXBuildFile; fileRef = 6EC742EC12C4DF7C00E46C7F /* huffman.c */; };
-		6EC742FA12C4DF7C00E46C7F /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 6EC742EE12C4DF7C00E46C7F /* Makefile */; };
 		6EC742FB12C4DF7C00E46C7F /* mpq.c in Sources */ = {isa = PBXBuildFile; fileRef = 6EC742F212C4DF7C00E46C7F /* mpq.c */; };
 		6EC742FC12C4DF7C00E46C7F /* wave.c in Sources */ = {isa = PBXBuildFile; fileRef = 6EC742F412C4DF7C00E46C7F /* wave.c */; };
-		8DD76F650486A84900D96B5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		6EC7437A12C5154900E46C7F /* DetourAlloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7437312C5154900E46C7F /* DetourAlloc.cpp */; };
+		6EC7437B12C5154900E46C7F /* DetourCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7437412C5154900E46C7F /* DetourCommon.cpp */; };
+		6EC7437C12C5154900E46C7F /* DetourNavMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7437512C5154900E46C7F /* DetourNavMesh.cpp */; };
+		6EC7437D12C5154900E46C7F /* DetourNavMeshBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7437612C5154900E46C7F /* DetourNavMeshBuilder.cpp */; };
+		6EC7437E12C5154900E46C7F /* DetourNavMeshQuery.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7437712C5154900E46C7F /* DetourNavMeshQuery.cpp */; };
+		6EC7437F12C5154900E46C7F /* DetourNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7437812C5154900E46C7F /* DetourNode.cpp */; };
+		6EC7438012C5154900E46C7F /* DetourObstacleAvoidance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7437912C5154900E46C7F /* DetourObstacleAvoidance.cpp */; };
+		6EC7439012C5155400E46C7F /* Recast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7438712C5155400E46C7F /* Recast.cpp */; };
+		6EC7439112C5155400E46C7F /* RecastAlloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7438812C5155400E46C7F /* RecastAlloc.cpp */; };
+		6EC7439212C5155400E46C7F /* RecastArea.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7438912C5155400E46C7F /* RecastArea.cpp */; };
+		6EC7439312C5155400E46C7F /* RecastContour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7438A12C5155400E46C7F /* RecastContour.cpp */; };
+		6EC7439412C5155400E46C7F /* RecastFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7438B12C5155400E46C7F /* RecastFilter.cpp */; };
+		6EC7439512C5155400E46C7F /* RecastMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7438C12C5155400E46C7F /* RecastMesh.cpp */; };
+		6EC7439612C5155400E46C7F /* RecastMeshDetail.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7438D12C5155400E46C7F /* RecastMeshDetail.cpp */; };
+		6EC7439712C5155400E46C7F /* RecastRasterization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7438E12C5155400E46C7F /* RecastRasterization.cpp */; };
+		6EC7439812C5155400E46C7F /* RecastRegion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7438F12C5155400E46C7F /* RecastRegion.cpp */; };
+		8DD76F650486A84900D96B5E /* pocketpather.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* pocketpather.cpp */; settings = {ATTRIBUTES = (); }; };
 		8DD76F6A0486A84900D96B5E /* Pocket-Pather.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* Pocket-Pather.1 */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +57,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		08FB7796FE84155DC02AAC07 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		08FB7796FE84155DC02AAC07 /* pocketpather.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pocketpather.cpp; sourceTree = "<group>"; };
+		6E890D3612C51A3200AEBAAC /* meshandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meshandler.h; sourceTree = "<group>"; };
+		6E890D3712C51A3200AEBAAC /* meshandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = meshandler.cpp; sourceTree = "<group>"; };
 		6EC7416F12C4DB8000E46C7F /* adt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = adt.cpp; path = libs/wowmapper/src/adt.cpp; sourceTree = "<group>"; };
 		6EC7417012C4DB8000E46C7F /* adt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = adt.h; path = libs/wowmapper/src/adt.h; sourceTree = "<group>"; };
 		6EC7417112C4DB8000E46C7F /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = libs/wowmapper/src/common.h; sourceTree = "<group>"; };
@@ -279,14 +297,38 @@
 		6EC742EB12C4DF7C00E46C7F /* extract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extract.h; sourceTree = "<group>"; };
 		6EC742EC12C4DF7C00E46C7F /* huffman.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = huffman.c; sourceTree = "<group>"; };
 		6EC742ED12C4DF7C00E46C7F /* huffman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = huffman.h; sourceTree = "<group>"; };
-		6EC742EE12C4DF7C00E46C7F /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		6EC742EF12C4DF7C00E46C7F /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
-		6EC742F012C4DF7C00E46C7F /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
 		6EC742F112C4DF7C00E46C7F /* mpq-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mpq-internal.h"; sourceTree = "<group>"; };
 		6EC742F212C4DF7C00E46C7F /* mpq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mpq.c; sourceTree = "<group>"; };
 		6EC742F312C4DF7C00E46C7F /* mpq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mpq.h; sourceTree = "<group>"; };
 		6EC742F412C4DF7C00E46C7F /* wave.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wave.c; sourceTree = "<group>"; };
 		6EC742F512C4DF7C00E46C7F /* wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wave.h; sourceTree = "<group>"; };
+		6EC7436A12C5154900E46C7F /* DetourAlloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourAlloc.h; sourceTree = "<group>"; };
+		6EC7436B12C5154900E46C7F /* DetourAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourAssert.h; sourceTree = "<group>"; };
+		6EC7436C12C5154900E46C7F /* DetourCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourCommon.h; sourceTree = "<group>"; };
+		6EC7436D12C5154900E46C7F /* DetourNavMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourNavMesh.h; sourceTree = "<group>"; };
+		6EC7436E12C5154900E46C7F /* DetourNavMeshBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourNavMeshBuilder.h; sourceTree = "<group>"; };
+		6EC7436F12C5154900E46C7F /* DetourNavMeshQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourNavMeshQuery.h; sourceTree = "<group>"; };
+		6EC7437012C5154900E46C7F /* DetourNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourNode.h; sourceTree = "<group>"; };
+		6EC7437112C5154900E46C7F /* DetourObstacleAvoidance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourObstacleAvoidance.h; sourceTree = "<group>"; };
+		6EC7437312C5154900E46C7F /* DetourAlloc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourAlloc.cpp; sourceTree = "<group>"; };
+		6EC7437412C5154900E46C7F /* DetourCommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourCommon.cpp; sourceTree = "<group>"; };
+		6EC7437512C5154900E46C7F /* DetourNavMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourNavMesh.cpp; sourceTree = "<group>"; };
+		6EC7437612C5154900E46C7F /* DetourNavMeshBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourNavMeshBuilder.cpp; sourceTree = "<group>"; };
+		6EC7437712C5154900E46C7F /* DetourNavMeshQuery.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourNavMeshQuery.cpp; sourceTree = "<group>"; };
+		6EC7437812C5154900E46C7F /* DetourNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourNode.cpp; sourceTree = "<group>"; };
+		6EC7437912C5154900E46C7F /* DetourObstacleAvoidance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourObstacleAvoidance.cpp; sourceTree = "<group>"; };
+		6EC7438312C5155400E46C7F /* Recast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recast.h; sourceTree = "<group>"; };
+		6EC7438412C5155400E46C7F /* RecastAlloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecastAlloc.h; sourceTree = "<group>"; };
+		6EC7438512C5155400E46C7F /* RecastAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecastAssert.h; sourceTree = "<group>"; };
+		6EC7438712C5155400E46C7F /* Recast.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Recast.cpp; sourceTree = "<group>"; };
+		6EC7438812C5155400E46C7F /* RecastAlloc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecastAlloc.cpp; sourceTree = "<group>"; };
+		6EC7438912C5155400E46C7F /* RecastArea.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecastArea.cpp; sourceTree = "<group>"; };
+		6EC7438A12C5155400E46C7F /* RecastContour.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecastContour.cpp; sourceTree = "<group>"; };
+		6EC7438B12C5155400E46C7F /* RecastFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecastFilter.cpp; sourceTree = "<group>"; };
+		6EC7438C12C5155400E46C7F /* RecastMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecastMesh.cpp; sourceTree = "<group>"; };
+		6EC7438D12C5155400E46C7F /* RecastMeshDetail.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecastMeshDetail.cpp; sourceTree = "<group>"; };
+		6EC7438E12C5155400E46C7F /* RecastRasterization.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecastRasterization.cpp; sourceTree = "<group>"; };
+		6EC7438F12C5155400E46C7F /* RecastRegion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecastRegion.cpp; sourceTree = "<group>"; };
 		8DD76F6C0486A84900D96B5E /* Pocket-Pather */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Pocket-Pather"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6859E8B029090EE04C91782 /* Pocket-Pather.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = "Pocket-Pather.1"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -318,7 +360,9 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				08FB7796FE84155DC02AAC07 /* main.cpp */,
+				08FB7796FE84155DC02AAC07 /* pocketpather.cpp */,
+				6E890D3612C51A3200AEBAAC /* meshandler.h */,
+				6E890D3712C51A3200AEBAAC /* meshandler.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -334,6 +378,8 @@
 		6EC7416912C4DB4C00E46C7F /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				6EC7438112C5155400E46C7F /* Recast */,
+				6EC7436812C5154900E46C7F /* Detour */,
 				6EC742E212C4DF7C00E46C7F /* libmpq */,
 				6EC7418612C4DB8700E46C7F /* glm */,
 				6EC7416D12C4DB7200E46C7F /* wowmapper */,
@@ -640,9 +686,6 @@
 				6EC742EB12C4DF7C00E46C7F /* extract.h */,
 				6EC742EC12C4DF7C00E46C7F /* huffman.c */,
 				6EC742ED12C4DF7C00E46C7F /* huffman.h */,
-				6EC742EE12C4DF7C00E46C7F /* Makefile */,
-				6EC742EF12C4DF7C00E46C7F /* Makefile.am */,
-				6EC742F012C4DF7C00E46C7F /* Makefile.in */,
 				6EC742F112C4DF7C00E46C7F /* mpq-internal.h */,
 				6EC742F212C4DF7C00E46C7F /* mpq.c */,
 				6EC742F312C4DF7C00E46C7F /* mpq.h */,
@@ -651,6 +694,81 @@
 			);
 			name = libmpq;
 			path = "libs/wowmapper/libs/libmpq-0.4.2/libmpq";
+			sourceTree = "<group>";
+		};
+		6EC7436812C5154900E46C7F /* Detour */ = {
+			isa = PBXGroup;
+			children = (
+				6EC7436912C5154900E46C7F /* Include */,
+				6EC7437212C5154900E46C7F /* Source */,
+			);
+			name = Detour;
+			path = libs/recastnavigation/Detour;
+			sourceTree = "<group>";
+		};
+		6EC7436912C5154900E46C7F /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				6EC7436A12C5154900E46C7F /* DetourAlloc.h */,
+				6EC7436B12C5154900E46C7F /* DetourAssert.h */,
+				6EC7436C12C5154900E46C7F /* DetourCommon.h */,
+				6EC7436D12C5154900E46C7F /* DetourNavMesh.h */,
+				6EC7436E12C5154900E46C7F /* DetourNavMeshBuilder.h */,
+				6EC7436F12C5154900E46C7F /* DetourNavMeshQuery.h */,
+				6EC7437012C5154900E46C7F /* DetourNode.h */,
+				6EC7437112C5154900E46C7F /* DetourObstacleAvoidance.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		6EC7437212C5154900E46C7F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6EC7437312C5154900E46C7F /* DetourAlloc.cpp */,
+				6EC7437412C5154900E46C7F /* DetourCommon.cpp */,
+				6EC7437512C5154900E46C7F /* DetourNavMesh.cpp */,
+				6EC7437612C5154900E46C7F /* DetourNavMeshBuilder.cpp */,
+				6EC7437712C5154900E46C7F /* DetourNavMeshQuery.cpp */,
+				6EC7437812C5154900E46C7F /* DetourNode.cpp */,
+				6EC7437912C5154900E46C7F /* DetourObstacleAvoidance.cpp */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		6EC7438112C5155400E46C7F /* Recast */ = {
+			isa = PBXGroup;
+			children = (
+				6EC7438212C5155400E46C7F /* Include */,
+				6EC7438612C5155400E46C7F /* Source */,
+			);
+			name = Recast;
+			path = libs/recastnavigation/Recast;
+			sourceTree = "<group>";
+		};
+		6EC7438212C5155400E46C7F /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				6EC7438312C5155400E46C7F /* Recast.h */,
+				6EC7438412C5155400E46C7F /* RecastAlloc.h */,
+				6EC7438512C5155400E46C7F /* RecastAssert.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		6EC7438612C5155400E46C7F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6EC7438712C5155400E46C7F /* Recast.cpp */,
+				6EC7438812C5155400E46C7F /* RecastAlloc.cpp */,
+				6EC7438912C5155400E46C7F /* RecastArea.cpp */,
+				6EC7438A12C5155400E46C7F /* RecastContour.cpp */,
+				6EC7438B12C5155400E46C7F /* RecastFilter.cpp */,
+				6EC7438C12C5155400E46C7F /* RecastMesh.cpp */,
+				6EC7438D12C5155400E46C7F /* RecastMeshDetail.cpp */,
+				6EC7438E12C5155400E46C7F /* RecastRasterization.cpp */,
+				6EC7438F12C5155400E46C7F /* RecastRegion.cpp */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		C6859E8C029090F304C91782 /* Documentation */ = {
@@ -704,7 +822,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DD76F650486A84900D96B5E /* main.cpp in Sources */,
+				8DD76F650486A84900D96B5E /* pocketpather.cpp in Sources */,
 				6EC7417F12C4DB8000E46C7F /* adt.cpp in Sources */,
 				6EC7418012C4DB8000E46C7F /* m2.cpp in Sources */,
 				6EC7418112C4DB8000E46C7F /* mpqhandler.cpp in Sources */,
@@ -716,9 +834,25 @@
 				6EC742F712C4DF7C00E46C7F /* explode.c in Sources */,
 				6EC742F812C4DF7C00E46C7F /* extract.c in Sources */,
 				6EC742F912C4DF7C00E46C7F /* huffman.c in Sources */,
-				6EC742FA12C4DF7C00E46C7F /* Makefile in Sources */,
 				6EC742FB12C4DF7C00E46C7F /* mpq.c in Sources */,
 				6EC742FC12C4DF7C00E46C7F /* wave.c in Sources */,
+				6EC7437A12C5154900E46C7F /* DetourAlloc.cpp in Sources */,
+				6EC7437B12C5154900E46C7F /* DetourCommon.cpp in Sources */,
+				6EC7437C12C5154900E46C7F /* DetourNavMesh.cpp in Sources */,
+				6EC7437D12C5154900E46C7F /* DetourNavMeshBuilder.cpp in Sources */,
+				6EC7437E12C5154900E46C7F /* DetourNavMeshQuery.cpp in Sources */,
+				6EC7437F12C5154900E46C7F /* DetourNode.cpp in Sources */,
+				6EC7438012C5154900E46C7F /* DetourObstacleAvoidance.cpp in Sources */,
+				6EC7439012C5155400E46C7F /* Recast.cpp in Sources */,
+				6EC7439112C5155400E46C7F /* RecastAlloc.cpp in Sources */,
+				6EC7439212C5155400E46C7F /* RecastArea.cpp in Sources */,
+				6EC7439312C5155400E46C7F /* RecastContour.cpp in Sources */,
+				6EC7439412C5155400E46C7F /* RecastFilter.cpp in Sources */,
+				6EC7439512C5155400E46C7F /* RecastMesh.cpp in Sources */,
+				6EC7439612C5155400E46C7F /* RecastMeshDetail.cpp in Sources */,
+				6EC7439712C5155400E46C7F /* RecastRasterization.cpp in Sources */,
+				6EC7439812C5155400E46C7F /* RecastRegion.cpp in Sources */,
+				6E890D3812C51A3200AEBAAC /* meshandler.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

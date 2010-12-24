@@ -5,11 +5,15 @@
 #include "m2.h"
 #include "wmomodel.h"
 
+#import "meshandler.h"
+
 //for mkdir
 #include <sys/stat.h>
 #include <sys/types.h>
 
 //- Functions ------------------------------------------------------------------
+void dumpMeshes(const char* wowPath, const char* wdtPath, uint32_t areaId = -1); 
+
 /** Just a list of MPQs we want to load. **/
 void loadAllMpqs( MpqHandler &mpq_h );
 /** Load MPQ by filename. **/
@@ -34,21 +38,29 @@ UidMap_t uid_map;
 BufferS_t adt_buf, obj_buf;
 
 //------------------------------------------------------------------------------
+
 int main( int arch, char **argv ) {
+	//dumpMeshes("/Applications/World of Warcraft/Data", "world\\maps\\Kalimdor\\Kalimdor", 14);
+	calculateRoute();
+	return 0;
+}
+
+
+void dumpMeshes(const char* wowPath, const char* wdtPath, uint32_t areaId) {
 	// Load MPQ file
-	MpqHandler mpq_h( "/Applications/World of Warcraft/Data" );
+	MpqHandler mpq_h( wowPath );
 	loadAllMpqs( mpq_h );
 	
 	// load WDT file which tells us what ADT tiles to load
 	BufferS_t file_buffer;
-	std::string zone_path( "world\\maps\\Kalimdor\\Kalimdor" );
+	std::string zone_path( wdtPath );
 	mpq_h.getFile( zone_path + ".wdt", &file_buffer );
 	
 	// Others Option
-	uint32_t areaId = 14;
+	//uint32_t areaId = 14;
 	uint32_t xTile = -1;
 	uint32_t yTile = -1;
-	bool dumpAll = false;
+	bool dumpAll = (areaId == -1);
 	bool saveTile = true; // Save to .obj file
 	
 	// create geometry buffer
@@ -65,7 +77,7 @@ int main( int arch, char **argv ) {
 	
 	if ( coords.size() <= 0 ) {
 		std::cout << "Zone not found." << std::endl;
-		return 0;
+		return;
 	}
 	
 	mkdir("dump", 0777);
@@ -135,8 +147,8 @@ int main( int arch, char **argv ) {
 	std::cout << "Finished" << std::endl;
 	std::cin ;
 	
-	return 0;
 }
+
 
 //------------------------------------------------------------------------------
 void loadAllMpqs( MpqHandler &mpq_h ) {
