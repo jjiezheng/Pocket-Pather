@@ -84,6 +84,38 @@ inline dtNavMesh* getNavMesh(const char* path)
 	return mesh;
 }
 
+inline void PGCoordsToNavmesh(float coords[3]) {
+	
+	float x, y, z;
+	
+	x = -coords[1];
+	y = coords[2];
+	z = -coords[0];
+	
+	coords[0] = x;
+	coords[1] = y;
+	coords[2] = z;
+	
+}
+inline void navmeshCoordsToPG(float coords[3]) {
+	float x, y, z;
+	
+	x = -coords[2];
+	y = -coords[0];
+	z = coords[1];
+	
+	coords[0] = x;
+	coords[1] = y;
+	coords[2] = z;	
+	
+}
+//i hate C++
+/*inline void PGCoordsToADT(float coords[]) {
+	int res[2];
+	res[0] = floor(32.0-(coords[0]/533.33333));
+	res[1] = floor(32.0-(coords[1]/533.33333));
+	return res;
+}*/
 
 inline void calculateRoute () {
 	
@@ -116,6 +148,8 @@ inline void calculateRoute () {
 	
 	//number of points in our straight path?
 	int m_nstraightPath = 0;
+	
+	//final path
 	float m_straightPath[MAX_POLYS*3];
 	
 	//no fucking clue
@@ -124,13 +158,16 @@ inline void calculateRoute () {
 	m_polyPickExt[1] = 4;
 	m_polyPickExt[2] = 2;
 	
+	//swim, jump, door? not really applicable
 	unsigned char m_straightPathFlags[MAX_POLYS];
+	
+	//the navmesh polys that are used for the path?
 	dtPolyRef m_straightPathPolys[MAX_POLYS];
 	
 	dtPolyRef m_polys[MAX_POLYS];
 	
 	
-	//get the nav mesh an init query object
+	//get the nav mesh and init a query object
 	m_navQuery->init(getNavMesh("all_tiles_navmesh.bin"), 2048);
 	
 	//required for findPath
@@ -138,8 +175,11 @@ inline void calculateRoute () {
 	m_navQuery->findNearestPoly(m_epos, m_polyPickExt, &m_filter, &m_endRef, 0);
 	
 	int m_npolys = 0;
+	
+	//fuck if i know, this is how it's done in the example :)
 	m_navQuery->findPath(m_startRef, m_endRef, m_spos, m_epos, &m_filter, m_polys, &m_npolys, MAX_POLYS);
 	
+	//find that fucker
 	m_navQuery->findStraightPath(m_spos, m_epos, m_polys, m_npolys,
 								 m_straightPath, m_straightPathFlags,
 								 m_straightPathPolys, &m_nstraightPath, MAX_POLYS);
@@ -148,7 +188,12 @@ inline void calculateRoute () {
 
 	
 	for (int i = 0; i < m_nstraightPath-1; ++i) {
-		printf("%f, %f, %f\n", m_straightPath[i*3], m_straightPath[i*3+1], m_straightPath[i*3+2]);
+		float coords[3];
+		coords[0] = m_straightPath[i*3];
+		coords[1] = m_straightPath[i*3+1];
+		coords[2] = m_straightPath[i*3+2];
+		navmeshCoordsToPG(coords);
+		printf("%f, %f, %f\n", coords[0], coords[1], coords[2]);
 	}
 	
 }

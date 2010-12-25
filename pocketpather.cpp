@@ -40,7 +40,7 @@ BufferS_t adt_buf, obj_buf;
 //------------------------------------------------------------------------------
 
 int main( int arch, char **argv ) {
-	//dumpMeshes("/Applications/World of Warcraft/Data", "world\\maps\\Kalimdor\\Kalimdor", 14);
+	//dumpMeshes("/Applications/World of Warcraft/Data", "world\\maps\\Kalimdor\\Kalimdor", 440);
 	calculateRoute();
 	return 0;
 }
