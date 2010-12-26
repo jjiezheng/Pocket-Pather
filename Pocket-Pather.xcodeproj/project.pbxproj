@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		6E05730612C6BF41008EA5B8 /* WorldMeshDumper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E05730512C6BF41008EA5B8 /* WorldMeshDumper.mm */; };
 		6E05730812C6BF5A008EA5B8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E05730712C6BF5A008EA5B8 /* Cocoa.framework */; };
-		6E890D3812C51A3200AEBAAC /* meshandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E890D3712C51A3200AEBAAC /* meshandler.cpp */; };
+		6E62B1F512C7B69200362377 /* PPNavmeshQuery.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E62B1F412C7B69200362377 /* PPNavmeshQuery.mm */; };
+		6E62B1FA12C7BB7200362377 /* PPCoords.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E62B1F912C7BB7200362377 /* PPCoords.mm */; };
 		6EC7417F12C4DB8000E46C7F /* adt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7416F12C4DB8000E46C7F /* adt.cpp */; };
 		6EC7418012C4DB8000E46C7F /* m2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7417212C4DB8000E46C7F /* m2.cpp */; };
 		6EC7418112C4DB8000E46C7F /* mpqhandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7417412C4DB8000E46C7F /* mpqhandler.cpp */; };
@@ -63,8 +64,10 @@
 		6E05730412C6BF41008EA5B8 /* WorldMeshDumper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldMeshDumper.h; sourceTree = "<group>"; };
 		6E05730512C6BF41008EA5B8 /* WorldMeshDumper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WorldMeshDumper.mm; sourceTree = "<group>"; };
 		6E05730712C6BF5A008EA5B8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		6E890D3612C51A3200AEBAAC /* meshandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meshandler.h; sourceTree = "<group>"; };
-		6E890D3712C51A3200AEBAAC /* meshandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = meshandler.cpp; sourceTree = "<group>"; };
+		6E62B1F312C7B69200362377 /* PPNavmeshQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNavmeshQuery.h; sourceTree = "<group>"; };
+		6E62B1F412C7B69200362377 /* PPNavmeshQuery.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PPNavmeshQuery.mm; sourceTree = "<group>"; };
+		6E62B1F812C7BB7200362377 /* PPCoords.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCoords.h; sourceTree = "<group>"; };
+		6E62B1F912C7BB7200362377 /* PPCoords.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PPCoords.mm; sourceTree = "<group>"; };
 		6EC7416F12C4DB8000E46C7F /* adt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = adt.cpp; path = libs/wowmapper/src/adt.cpp; sourceTree = "<group>"; };
 		6EC7417012C4DB8000E46C7F /* adt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = adt.h; path = libs/wowmapper/src/adt.h; sourceTree = "<group>"; };
 		6EC7417112C4DB8000E46C7F /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = libs/wowmapper/src/common.h; sourceTree = "<group>"; };
@@ -367,10 +370,12 @@
 			isa = PBXGroup;
 			children = (
 				08FB7796FE84155DC02AAC07 /* pocketpather.mm */,
-				6E890D3612C51A3200AEBAAC /* meshandler.h */,
-				6E890D3712C51A3200AEBAAC /* meshandler.cpp */,
 				6E05730412C6BF41008EA5B8 /* WorldMeshDumper.h */,
 				6E05730512C6BF41008EA5B8 /* WorldMeshDumper.mm */,
+				6E62B1F312C7B69200362377 /* PPNavmeshQuery.h */,
+				6E62B1F412C7B69200362377 /* PPNavmeshQuery.mm */,
+				6E62B1F812C7BB7200362377 /* PPCoords.h */,
+				6E62B1F912C7BB7200362377 /* PPCoords.mm */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -861,8 +866,9 @@
 				6EC7439612C5155400E46C7F /* RecastMeshDetail.cpp in Sources */,
 				6EC7439712C5155400E46C7F /* RecastRasterization.cpp in Sources */,
 				6EC7439812C5155400E46C7F /* RecastRegion.cpp in Sources */,
-				6E890D3812C51A3200AEBAAC /* meshandler.cpp in Sources */,
 				6E05730612C6BF41008EA5B8 /* WorldMeshDumper.mm in Sources */,
+				6E62B1F512C7B69200362377 /* PPNavmeshQuery.mm in Sources */,
+				6E62B1FA12C7BB7200362377 /* PPCoords.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
