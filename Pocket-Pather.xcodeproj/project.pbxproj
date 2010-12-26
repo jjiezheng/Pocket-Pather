@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E05730612C6BF41008EA5B8 /* WorldMeshDumper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E05730512C6BF41008EA5B8 /* WorldMeshDumper.mm */; };
+		6E05730812C6BF5A008EA5B8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E05730712C6BF5A008EA5B8 /* Cocoa.framework */; };
 		6E890D3812C51A3200AEBAAC /* meshandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E890D3712C51A3200AEBAAC /* meshandler.cpp */; };
 		6EC7417F12C4DB8000E46C7F /* adt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7416F12C4DB8000E46C7F /* adt.cpp */; };
 		6EC7418012C4DB8000E46C7F /* m2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7417212C4DB8000E46C7F /* m2.cpp */; };
@@ -39,7 +41,7 @@
 		6EC7439612C5155400E46C7F /* RecastMeshDetail.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7438D12C5155400E46C7F /* RecastMeshDetail.cpp */; };
 		6EC7439712C5155400E46C7F /* RecastRasterization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7438E12C5155400E46C7F /* RecastRasterization.cpp */; };
 		6EC7439812C5155400E46C7F /* RecastRegion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7438F12C5155400E46C7F /* RecastRegion.cpp */; };
-		8DD76F650486A84900D96B5E /* pocketpather.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* pocketpather.cpp */; settings = {ATTRIBUTES = (); }; };
+		8DD76F650486A84900D96B5E /* pocketpather.mm in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* pocketpather.mm */; settings = {ATTRIBUTES = (); }; };
 		8DD76F6A0486A84900D96B5E /* Pocket-Pather.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* Pocket-Pather.1 */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +59,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		08FB7796FE84155DC02AAC07 /* pocketpather.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pocketpather.cpp; sourceTree = "<group>"; };
+		08FB7796FE84155DC02AAC07 /* pocketpather.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = pocketpather.mm; sourceTree = "<group>"; };
+		6E05730412C6BF41008EA5B8 /* WorldMeshDumper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldMeshDumper.h; sourceTree = "<group>"; };
+		6E05730512C6BF41008EA5B8 /* WorldMeshDumper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WorldMeshDumper.mm; sourceTree = "<group>"; };
+		6E05730712C6BF5A008EA5B8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6E890D3612C51A3200AEBAAC /* meshandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meshandler.h; sourceTree = "<group>"; };
 		6E890D3712C51A3200AEBAAC /* meshandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = meshandler.cpp; sourceTree = "<group>"; };
 		6EC7416F12C4DB8000E46C7F /* adt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = adt.cpp; path = libs/wowmapper/src/adt.cpp; sourceTree = "<group>"; };
@@ -340,6 +345,7 @@
 			files = (
 				6EC742D612C4DF0E00E46C7F /* libz.1.2.3.dylib in Frameworks */,
 				6EC742D812C4DF2500E46C7F /* libbz2.1.0.5.dylib in Frameworks */,
+				6E05730812C6BF5A008EA5B8 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,9 +366,11 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				08FB7796FE84155DC02AAC07 /* pocketpather.cpp */,
+				08FB7796FE84155DC02AAC07 /* pocketpather.mm */,
 				6E890D3612C51A3200AEBAAC /* meshandler.h */,
 				6E890D3712C51A3200AEBAAC /* meshandler.cpp */,
+				6E05730412C6BF41008EA5B8 /* WorldMeshDumper.h */,
+				6E05730512C6BF41008EA5B8 /* WorldMeshDumper.mm */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -385,6 +393,7 @@
 				6EC7416D12C4DB7200E46C7F /* wowmapper */,
 				6EC742D512C4DF0E00E46C7F /* libz.1.2.3.dylib */,
 				6EC742D712C4DF2500E46C7F /* libbz2.1.0.5.dylib */,
+				6E05730712C6BF5A008EA5B8 /* Cocoa.framework */,
 			);
 			name = Libs;
 			sourceTree = "<group>";
@@ -822,7 +831,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DD76F650486A84900D96B5E /* pocketpather.cpp in Sources */,
+				8DD76F650486A84900D96B5E /* pocketpather.mm in Sources */,
 				6EC7417F12C4DB8000E46C7F /* adt.cpp in Sources */,
 				6EC7418012C4DB8000E46C7F /* m2.cpp in Sources */,
 				6EC7418112C4DB8000E46C7F /* mpqhandler.cpp in Sources */,
@@ -853,6 +862,7 @@
 				6EC7439712C5155400E46C7F /* RecastRasterization.cpp in Sources */,
 				6EC7439812C5155400E46C7F /* RecastRegion.cpp in Sources */,
 				6E890D3812C51A3200AEBAAC /* meshandler.cpp in Sources */,
+				6E05730612C6BF41008EA5B8 /* WorldMeshDumper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
