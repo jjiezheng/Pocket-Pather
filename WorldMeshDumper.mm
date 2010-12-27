@@ -3,7 +3,6 @@
 //  Pocket-Pather
 //
 //  Created by Joonas Trussmann on 12/26/10.
-//  Copyright 2010 Finestmedia OÜ. All rights reserved.
 //
 
 #import "WorldMeshDumper.h"
